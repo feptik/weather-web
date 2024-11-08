@@ -1,0 +1,133 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 150px;
+    background-image: url("beautiful-clouds-digital-art(1).jpg");
+}
+
+.header{
+    width: 100%;
+    height: 100%;
+    background: rgba(161,21,207, 0.1);
+    padding: 40px 15px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titel{
+    font-family: Rubik;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 52px;
+    color: mintcream;
+    text-align: center;
+
+}
+
+#form{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+    background: mintcream;
+    height: 54px;
+    width: 460px;
+}
+
+#inputCity{
+    flex-grow: 1;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1;
+    border-radius: 6px;
+}
+
+.btn{
+    font-family: Rubik;
+    text-align: center;
+    width: 145px;
+    height: 54px;
+    background-color: brown;
+    border-color: brown;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    color: mintcream;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover{
+    background-color: crimson;
+}
+
+/* стили мейн контента */
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 30px;
+    width: 360px;
+    background-color: mintcream;
+    border-radius: 6px;
+    box-shadow: 0px 5px 20px black;
+    font-family: Rubik;
+}
+
+.card:before{
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: -10px;
+    z-index: -1;
+    width: calc(100% - 20px);
+    height: 100%;
+    background: mintcream;
+    box-shadow: 0px 5px 20px black;
+    border-radius: 6px;
+}
+
+.card-city{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-height:20px;
+    line-height: 33px;
+    color: black;
+    font-family: Rubik;
+}
+
+.card-city span{
+    display: inline-block;
+    vertical-align: text-top;
+    padding: 3px 5px;
+    background: brown;
+    border-radius: 6px;
+    color: mintcream;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: Rubik;
+    line-height: 1;
+}
+
+.card-weather {
+    display: flex;
+    width: 360px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Rubik;
+}
+
+.temperature{
+    font-family: Rubik;
+}
+
+.temperature sup{
+    font-size: 50%;
+    font-family: Rubik;
+}
